@@ -1,4 +1,4 @@
-# Portifólio Pessoal
+# Portifólio Front-end
 
 Desenvolvido em:
 - JavaScript
