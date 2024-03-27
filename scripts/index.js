@@ -29,3 +29,4 @@ colorMode.addEventListener('change', () => {
     document.querySelector('.element-with-blur-effect').style.filter = 'blur(4px)'; // Adicione um efeito de desfoque de 4px no elemento específico
   }
 });
+

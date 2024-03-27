@@ -31,10 +31,6 @@
   color: var(--tertiary-color);
 }
 
-.navbar.active {
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
 .navbar .navbar__content .navbar__mobile,
 .navbar .navbar__content .navbar__mobile .mobile__links {
   display: none;
@@ -59,6 +55,8 @@
   .navbar .navbar__content .navbar__mobile.active .mobile__links {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center;
     background-color: var(--white);
     width: 100%;
     position: absolute;
@@ -78,4 +76,8 @@
     display: block;
     text-align: center;
   }
+}
+
+.navbar.active {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 }
