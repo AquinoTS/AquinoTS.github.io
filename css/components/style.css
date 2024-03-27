@@ -1,0 +1,27 @@
+/* Estilos para o modo claro */
+.white-mode {
+    background-color: white; /* Cor de fundo */
+    color: black; /* Cor do texto */
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-color: #0f0e0e; /* Cor de fundo escura */
+    color: white; /* Cor do texto clara */
+}
+
+.light-tertiary-color {
+    position: relative; /* Garante que o pseudo-elemento seja posicionado em relação a este elemento */
+}
+
+.light-tertiary-color::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-tertiary-color); /* Cor de fundo a ser desfocada */
+    filter: blur(var(--light-tertiary-color-blur)); /* Aplica o efeito de blur */
+    z-index: -1; /* Garante que o pseudo-elemento fique abaixo do conteúdo do elemento */
+}
